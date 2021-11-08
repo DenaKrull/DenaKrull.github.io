@@ -1,0 +1,215 @@
+    html {
+        background-image: url(../images/background.jpg);
+        background-repeat: repeat;
+    }
+    
+    body {
+        text-align: center;
+        max-width: 800px;
+        margin: auto;
+        margin-top: 0;
+        margin-bottom: 3.75em;
+    }
+    
+    h1 {
+        text-transform: uppercase;
+        color: rgb(111 74 86);
+        font-size: 36px;
+        margin-left: 200px;
+        margin-right: 200px;
+        margin-bottom: 0;
+        padding: 1em;
+        border: 9px solid rgb(216 166 166);
+        border-radius: 50px;
+    }
+    
+    h2 {
+        color: rgb(119, 73, 73);
+    }
+    
+    header h1 {
+        background-color: black;
+        margin: 2em;
+    }
+    
+    header {
+        text-align: center;
+        border-bottom: 1px inset rgb(216 166 166);
+    }
+    
+    article {
+        background-color: rgb(216 166 166);
+        font-family: 'Algerian', fantasy;
+        text-align: justify;
+        color: rgb(53, 49, 49);
+        display: inline-block;
+        padding: 2em;
+        margin: auto;
+    }
+    
+    nav {
+        background-color: white;
+        font-size: 15px;
+        color: gray;
+        font-style: bold;
+        top: 0;
+        text-align: right;
+        padding: .5em;
+        right: 0;
+        left: 0;
+        position: fixed;
+    }
+    
+    a {
+        font-size: 18px;
+        text-decoration: none;
+        text-transform: capitalize;
+    }
+    
+    header img {
+        width: 400px;
+    }
+    
+    img {
+        width: 200px;
+    }
+    
+    ul .myList {
+        display: inline;
+    }
+    
+    a:link {
+        color: darkslategray;
+    }
+    
+    a:visited {
+        color: darkgray;
+    }
+    
+    a:focus {
+        color: yellow;
+    }
+    
+    a:hover {
+        color: rgb(83, 190, 226);
+    }
+    
+    a:active {
+        color: greenyellow;
+    }
+    
+    #copyright {
+        color: black;
+        position: absolute;
+        left: 10px;
+    }
+    
+    .button {
+        background-color: black;
+        text-align: center;
+        padding: 2em;
+        margin-top: 1em;
+        margin-left: 17em;
+        margin-right: 17em;
+    }
+    
+    .backButton {
+        background-color: black;
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        padding: 1em;
+        max-width: 120px;
+    }
+    
+    #buttonTop {
+        background-color: white;
+        color: gray;
+        font-size: 12px;
+        padding: .5em;
+        position: fixed;
+        right: 10px;
+        bottom: 10px;
+    }
+    
+    video {
+        margin: 1em;
+    }
+    
+    ul {
+        list-style-type: none;
+        padding: 0;
+        color: white;
+        text-align: center;
+        background-color: #292929;
+        width: 50%;
+        margin: auto
+    }
+    
+    li {
+        padding: .5em;
+        border-top: 3px solid #3c3c3c;
+    }
+    
+    li:first-child {
+        border-top: none;
+    }
+    
+    li:not(:last-of-type) {
+        border-bottom: 5px solid rgb(0, 0, 0);
+    }
+    
+    @media screen and (max-width: 1000px) {
+        video {
+            width: 100%;
+            box-sizing: border-box;
+        }
+    }
+    
+    @media screen and (min-width: 100px) {
+        video {
+            width: 50%;
+        }
+    }
+    
+    @media print {
+        video {
+            display: none;
+        }
+    }
+    
+    table {
+        text-align: center;
+        border-collapse: collapse;
+        background-color: black;
+        color: white;
+        margin: auto;
+        margin-top: 2em;
+        padding: 2em;
+    }
+    
+    td,
+    th {
+        border: 1px solid black;
+        padding: .5em 1em;
+    }
+    
+    tfoot {
+        color: red;
+    }
+    
+    caption {
+        font-weight: bold;
+        font-size: 20px;
+        text-shadow: 1px 2px darkgreen;
+        color: greenyellow;
+        font-family: cursive;
+    }
+    
+    tbody tr:not(:first-child):nth-child(2n) {
+        background-color: #292929;
+    }
+    
+    tbody td:hover:not(:first-of-type) {
+        background-color: cadetblue;
+    }

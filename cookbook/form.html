@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html {
+            background-image: url(images/background.jpg);
+        }
+        
+        body {
+            width: 80%;
+            margin: auto;
+        }
+        
+        input:not([type="radio"]):not([type="checkbox"]) {
+            width: 50%;
+            box-sizing: border-box;
+            margin-bottom: .5em;
+            margin-top: .25em;
+            display: block;
+        }
+        
+        [type="radio"],
+        [type="checkbox"],
+        option {
+            text-align: center;
+            margin-bottom: .25em;
+        }
+        
+        form {
+            width: 600px;
+        }
+        
+        div {
+            text-align: center;
+            background: radial-gradient(circle, rgba(217, 41, 118, 1) 2%, rgba(207, 62, 134, 1) 16%, rgba(74, 84, 198, 1) 78%, rgba(99, 158, 227, 1) 100%);
+            border-radius: 8px;
+        }
+        
+        h3 {
+            margin-bottom: 2em;
+        }
+        
+        h4 {
+            text-align: left;
+        }
+        
+        textarea {
+            margin: 0px;
+            width: 631px;
+            height: 121px;
+            display: block;
+        }
+        
+        .button {
+            margin: 2em;
+            padding: .5em;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Thanks for stopping by</h1>
+        <h2>Please begin by completing the form below</h2>
+        <h3>Your feedback is valuable to us</h3>
+    </div>
+    <form action="feedback.php" method="POST">
+        <h4>Please provide us with your contact information</h4>
+
+        <label for="Name">Name:</label>
+        <input type="text" name="tName">
+
+
+
+        <label for="address">Address:</label>
+        <input type="text" name="address">
+
+        <label for="phone">Phone:</label >
+        <input type="tel" name="phone" id="phone" required>
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email">
+        <label for="dateVisited">Date Visited:</label>
+        <input name="dateVisited" id="dateVisited" type="date">
+
+        <label>
+          <input type="radio" name="poll" value="stay" checked>Dine in
+          <input type="radio" name="poll" value="go">Dine out</label>
+
+        <br>
+
+        <label>Mains:
+          <input type="checkbox" name="Main" value="chicken fingers">chicken fingers
+          <input type="checkbox" name="Main" value="grilled chicken">grilled chicken
+          <input type="checkbox" name="Main" value="steak">steak
+        </label>
+
+        <br>
+        <label for="drinks">Drinks:
+          <select name="drinks" id="drinks">
+            <option value="1">Coke</option>
+            <option value="2">Pepsi</option>
+            <option value="3">Sprite</option>
+            <option value="4">Snapple</option>
+          </select>
+        </label>
+
+        <br>
+
+        <label for="comments">Additional Notes:</label>
+        <textarea name="comments" id="comments" placeholder="Enter Text Here"></textarea>
+        <br>
+
+        <label for="rating">How would you rate our website:</label> <br> 1
+        <input type="range" name="rating" id="rating" min="1" max="5" value="5">5
+
+        <br>
+
+
+        <button class="button">Sumbit</button>
+    </form>
+
+</body>
+
+</html>

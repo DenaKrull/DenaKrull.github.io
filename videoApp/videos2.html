@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            text-align: center;
+        }
+        
+        #video video {
+            width: 300px;
+        }
+        
+        #error {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>PCS Video App</h1>
+    <h1 id="error"></h1>
+
+    <h3>Choose a video</h3>
+    <select id="videos">
+        <option hidden>choose a video</option>
+    </select>
+
+    <div id="video">
+        <h2 id="title"></h2>
+        <video id="videoElem" controls></video>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="videos2.js"></script>
+</body>
+
+</html>

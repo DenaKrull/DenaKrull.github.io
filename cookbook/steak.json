@@ -1,0 +1,5 @@
+{
+    "name": "Steak",
+    "image": "images/steak.jpg",
+    "ingredients": ["Meat", "Salt", "Pepper"]
+}
