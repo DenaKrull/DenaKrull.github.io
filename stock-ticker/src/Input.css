@@ -1,0 +1,18 @@
+#inputs{
+  margin: 2em;
+}
+
+label{
+  background-color: lightgray;
+  border: 1px solid black;
+  padding: 1em;
+}
+button{
+  padding: 1em;
+}
+
+input{
+  border: 1px solid black;
+  padding: 1em;
+ 
+}
