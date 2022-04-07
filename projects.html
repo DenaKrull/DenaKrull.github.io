@@ -10,44 +10,88 @@
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="icon" href="images/dkLogo.png">
   <title>Dena Krull</title>
-  <style>
-    header {
-      margin-bottom: 5em;
-    }
-  </style>
+  <link rel="stylesheet" href="projects.css">
 </head>
 
 <body>
-  <header class=" bg-dark text-secondary  text-center ">
+  <header class=" text-primary text-center ">
 
-    <ul class="nav justify-content-center navbar navbar-light bg-light fixed-top">
+    <ul class="nav justify-content-center navbar navbar-dark bg-dark fixed-top">
+      <div id="projects" class="navbar-brand">Projects</div>
       <li class="nav-item ">
-        <a class="nav-link active link-secondary " aria-current="page " href="index.html ">Home</a>
+        <a class="nav-link active link-primary " aria-current="page" href="index.html ">Home</a>
       </li>
       <li class="nav-item ">
-        <a class="nav-link active link-secondary " aria-current="page " href="Dena Krull Resume.pdf ">Resume</a>
+        <a class="nav-link active link-primary " aria-current="page " href="Dena Krull Resume.pdf ">Resume</a>
       </li>
       <li class="nav-item ">
-        <a class="nav-link link-secondary" href="about.html">Skills</a>
+        <a class="nav-link link-primary" href="about.html">Skills</a>
       </li>
       <li class="nav-item ">
-        <a class="nav-link link-secondary " href="contact.html ">Contact</a>
+        <a class="nav-link link-primary " href="contact.html ">Contact</a>
       </li>
 
     </ul>
 
   </header>
+  <div id="cards" class="row" >
 
-  <div class="card text-white bg-dark col-sm-6">
-    <h5 class="card-header">Stock App</h5>
-    <div class="card-body">
+    <div class="col-sm-3 " >
+      <div class="card text-white bg-dark" style="height:18em;">
+        <h5 class="card-header">Stock App</h5>
+        <div class="card-body">
 
-      <p class="card-text">This stock app was created using an api</p>
-      <a href="./stock-ticker/build/index.html" class="btn btn-primary">view</a>
+          <p class="card-text">I created this stock app using Javascript. This stock app was created using an api</p>
+          <section class="text-center ">
+            <a href="./stock-ticker/build/index.html" target="_blank"  class="btn btn-primary card-btn-bottom">view</a>
+          </section>
+        </div>
+      </div>
     </div>
-  </div>
+
+    <div class="col-sm-3">
+      <div class="card text-white bg-dark">
+        <h5 class="card-header">Stock App</h5>
+        <div class="card-body">
+
+          <p class="card-text ">This stock app was created using an api</p>
+          <section class="text-center">
+            <a href="./stock-ticker/build/index.html" class="btn btn-primary btn-center">view</a>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-3">
+      <div class="card text-white bg-dark">
+        <h5 class="card-header">Weather App</h5>
+        <div class="card-body">
+
+          <p class="card-text ">This app uses Openweathermap api to show a user the weather. Any zipcode that is in the USA can be entered and it will return to you the current weather in that location. An extra feature is this app is that the current time is shown.</p>
+          <section class="text-center">
+            <a href="./weatherApp/index.html" class="btn btn-primary btn-center">view</a>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-3">
+      <div class="card text-white bg-dark">
+        <h5 class="card-header">Blog App</h5>
+        <div class="card-body">
+
+          <p class="card-text ">Here we have a full blown blog app. This app utilizes react on the front end, stores data in mongoDB, and uses node on the backend. I have created my very own api which is used to make calls to the server. This app was also built with web sockets so that new posts and comments will appear as soon as they are posted. It has authentication as well inwhich you must be registered and logged in to create a post or comment.</p>
+          <section class="text-center">
+            <a href="./blog/blogClient/build/index.html" class="btn btn-primary btn-center">view</a>
+          </section>
+        </div>
+      </div>
+    </div>
 
   </div>
+
+
+
 </body>
 
 </html>

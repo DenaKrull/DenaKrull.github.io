@@ -224,7 +224,6 @@
         context.fillStyle = 'green';
         context.fillText('Press ESC to play again', canvas.width / 2 - 125, canvas.height / 2 + 125);
         document.addEventListener('keydown', (event) => {
-
             if (event.key === 'Escape') {
                 window.location.href = 'snake.html';
             }

@@ -17,7 +17,7 @@ export default function Input({ setSymbol }) {
 
         <label>Enter Stock Ticker Symbol (e.g. MSFT):</label>
         <input type="text" placeholder="Search" onChange={e => setInputValue(e.target.value)} />
-        <button onClick={handleClick}>Update</button>
+        <button onClick={handleClick}>Search</button>
         <hr />
       </div>
     </>
