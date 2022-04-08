@@ -14,8 +14,7 @@ export default function App() {
       <Header />
       <Input setSymbol={setSymbol} />
       {symbol && <Stocks stockInput={symbol} />}
-      {symbol && <Quote stockInput={symbol} />}
-
+      {symbol && < Quote stockInput={symbol} />}
     </>);
 }
 

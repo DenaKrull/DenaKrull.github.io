@@ -2,9 +2,21 @@
   margin: 1em;
 }
 #stockBody{
-  margin: 2em;
+  /* margin: 2em; */
 }
 
 #loading{
   margin: 2em;
+}
+#url{
+  cursor: pointer;
+}
+
+#stockDetails{
+  text-align:center;
+  background-color: cadetblue;
+  margin: 2em;
+  padding: 1.5em;
+
+  margin-bottom: 0;
 }

@@ -21,13 +21,12 @@ export default function Quote({ stockInput }) {
     })();
   }, [stockInput]);
 
-
   return (
     <>
       <div id="quote">
         <h1>Current Price: {quote.c}</h1>
-        <span>Change:</span>
-        <div style={quote.d < 0 ? { color: 'red' } : { color: 'green' }}>{quote.d}</div>
+        <span id='number'>Change:</span>
+        <div id="number" style={quote.d < 0 ? { color: 'red' } : { color: 'green' }}> {quote.d}</div>
       </div>
     </>
   );

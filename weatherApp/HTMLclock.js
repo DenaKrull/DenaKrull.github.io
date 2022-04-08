@@ -7,9 +7,8 @@ window.pcs.stopwatch = (function() {
     function getDate() {
         let d = new Date();
         clock.append("current time: " + '<br>' + d.toLocaleTimeString());
-
     }
-
+    
     function currentTime() {
         setInterval(() => {
             clock.empty();
@@ -18,12 +17,10 @@ window.pcs.stopwatch = (function() {
         }, 1000);
     }
 
-
     function createClock() {
         getDate();
         currentTime();
     }
-
 
     return {
         createClock: createClock,

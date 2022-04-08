@@ -17,7 +17,7 @@
   <header class=" text-primary text-center ">
 
     <ul class="nav justify-content-center navbar navbar-dark bg-dark fixed-top">
-      <div id="projects" class="navbar-brand">Projects</div>
+      <div id="projects" class="navbar-brand" style="margin-right:75em;">Projects</div>
       <li class="nav-item ">
         <a class="nav-link active link-primary " aria-current="page" href="index.html ">Home</a>
       </li>
@@ -35,15 +35,16 @@
 
   </header>
   <div id="cards" class="row">
-    
+
     <div class="col-sm-3">
       <div class="card text-white bg-dark">
-        <h5 class="card-header">Weather App</h5>
+        <h5 class="card-header text-primary">Weather App</h5>
         <div class="card-body">
+          <div style="height: 15em;">
 
           <p class="card-text ">This app uses the open weather map api to display the weather. Any valid zipcode in the
-            USA can be entered in which this site will return to you the current weather in that location. An added
-            feature of a time clock is shown at the top of the screen</p>
+            USA can be entered in which this site will return to you the current weather in that location.</p>
+            </div>
           <section class="text-center">
             <a href="./weatherApp/index.html" class="btn btn-primary btn-center">view project</a>
           </section>
@@ -53,11 +54,12 @@
 
     <div class="col-sm-3 ">
       <div class="card text-white bg-dark">
-        <h5 class="card-header">Stock App</h5>
+        <h5 class="card-header text-primary">Stock App</h5>
         <div class="card-body">
-
-          <p class="card-text">This is a react based app. Api is from finnhub.io. Input any stock ticker symbol and it
-            will display that stocks information </p>
+          <div style=" height: 15em; overflow: auto;">
+            <p class="card-text">This app was made in react and uses functional components and hooks.<br> Input any stock ticker symbol and it
+              will display that stocks information. Api: finnhub.io</p>
+          </div>
           <section class="text-center ">
             <a href="./stock-ticker/build/index.html" target="_blank" class="btn btn-primary card-btn-bottom">view
               project</a>
@@ -71,13 +73,16 @@
 
     <div class="col-sm-3">
       <div class="card text-white bg-dark">
-        <h5 class="card-header">Blog App</h5>
-        <div class="card-body">
+        <h5 class="card-header  text-primary">Blog App</h5>
 
-          <p class="card-text ">This app utilizes react on the front end, stores data in mongoDB, and uses node on the
-            backend.<br> This app was also built with web sockets so that new posts and comments will appear as soon as
-            they are posted.<br> Authentication is implented in which you must be registered and logged in to create a
-            post or comment.</p>
+        <div class="card-body ">
+          <div style="height: 15em;">
+            <p class="card-text ">This app utilizes react on the front end, stores data in mongoDB, and uses node on the
+              backend.<br> This app was also built with web sockets so that new posts and comments will appear as soon
+              as
+              they are posted.</p>
+
+          </div>
           <section class="text-center">
             <a href="./blog/blogClient/build/index.html" class="btn btn-primary btn-center">view project</a>
           </section>

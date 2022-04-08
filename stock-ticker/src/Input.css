@@ -1,18 +1,20 @@
-#inputs{
+#inputs {
   margin: 2em;
 }
 
-label{
+label {
   background-color: lightgray;
-  border: 1px solid black;
+  /* border: 1px  black; */
   padding: 1em;
+  margin-right: 1em;
 }
-button{
+
+button {
   padding: 1em;
 }
 
-input{
+input {
   border: 1px solid black;
   padding: 1em;
- 
+
 }

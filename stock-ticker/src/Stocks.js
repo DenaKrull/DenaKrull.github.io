@@ -31,10 +31,14 @@ export default function Stocks({ stockInput }) {
 
   return (
     <>
-      <h1 id="stockName">{stocks.ticker} - {stocks.name}</h1>
-      <p id="stockBody">{stocks.finnhubIndustry}</p>
-      <p id="stockBody">{stocks.exchange}</p>
-      {/* <p id="stockBody">{stocks.description}</p> */}
+      <div id='stockDetails'>
+        <h1 id="stockName">{stocks.ticker} - {stocks.name}</h1>
+        <a id='url' href='{stocks.weburl}'>{stocks.weburl}</a>
+
+        <p id="stockBody">{stocks.finnhubIndustry}</p>
+        <p id="stockBody">{stocks.exchange}</p>
+        <p id="stockBody">{stocks.description}</p>
+      </div>
     </>
 
   );
